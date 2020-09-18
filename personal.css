@@ -1,3 +1,4 @@
+
 h2 {
     color: purple;
 }
@@ -9,4 +10,7 @@ background-color: mediumblue;
 }
 h1 {
     color: white;
+}
+img {
+    border-radius: 10%;
 }
