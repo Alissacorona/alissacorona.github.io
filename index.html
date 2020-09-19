@@ -9,15 +9,23 @@
    img {
     border-radius: 10%;
     float: right;
-    margin: auto;
-    border: 1px soild black;
-   
+    margin: 1em;
+    border: 2px solid black;
+       
    }
 body { 
 background-color: rgba(255, 255, 255, 0.699);
+max-width: 850px;
+    margin: auto;
+    border-radius: 1em;
 }
 header {
 background-color: rgba(184, 101, 218, 0.842);
+border-radius: 50px 50px 0px 0px;
+font-size: 20px;
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+
 
 }
 h1 {
@@ -28,9 +36,16 @@ footer{
   color: white;
   background-color: rgba(184, 101, 218, 0.842);
   text-align: center;
+  border-radius: 0px 0px 50px 50px;
+  font-size: 16px;
+}
+.contact-info{
+  float: right;
 }
 .assign-info{
   background-color: rgb(78, 78, 78);
+  font-size: 14px;
+  font-family: 'Open Sans Condensed', sans-serif;
   
 }
 h2{
@@ -40,14 +55,23 @@ h2{
 .assign-links{
   color: white;
   text-align: center;
+  padding: 1em;
+  font-size:20px;
+  font-family: 'Open Sans Condensed', sans-serif;
   
 }
 .time-update{
   color:  rgb(78, 78, 78);
 }
-a { color: white}
+a { color:rgb(216, 253, 8); }
 h1{ text-align: center;}
 ul{ list-style-type: none; }
+#credit {
+  text-align: right;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
  </style>
 </head>
 <body>
@@ -62,7 +86,7 @@ ul{ list-style-type: none; }
     <h2>WDD 230: Web Frontend Development Assigment</h2>
     <ul class="assign-links">
         <li>Week 2:
-            <a link href="#">Assigment link</a>
+            <a href="#">Assigment link</a>
         </li>
         <li>
             Week 3: 
@@ -82,7 +106,7 @@ ul{ list-style-type: none; }
   | Alissa Corona | Idaho | 
   <a href="https://www.byui.edu/">BYUI Online Learning</a>
 </p>
-<div id="time-update" class="time-update">Last Updated: 9/17/2020 20:24:13</div>
+<div id="time-update" class="time-update">Last Updated: 9/19/2020 1:38:32</div>
 <script>
   const options = {weekday: 'long', day:'numeric', month: 'long', year:'numeric'};
   document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-Us', options) }
