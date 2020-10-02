@@ -1,0 +1,49 @@
+body{
+    background-color: rgb(63, 98, 163);
+    max-width: 850px;
+margin: auto;
+border-radius: 1em;
+}
+nav {
+display: block;
+text-align: center;
+}
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+overflow: hidden;
+text-align: center;
+}
+nav ul li a {
+display: flex;
+color:  rgb(214, 244, 255);
+text-align: center;
+padding: 0.75rem;
+text-decoration: none;
+background-color: rgb(193, 132, 197);
+font-family: 'Arvo', serif;
+margin: 0 auto;
+
+
+
+}
+nav a:hover {
+font-family: 'Arvo', serif;
+color: rgb(254, 234, 0);
+}
+header,#heading{
+background-color: rgb(214, 244, 255);
+font-family: 'Fugaz One', cursive;
+}
+main{
+background-color:  rgb(214, 244, 255);
+}
+p,h3{
+font-family: 'Arvo', serif;
+}
+h1{font-family: 'Oswald', sans-serif;}
+@media only screen and (min-width: 37.5em) {
+
+nav ul { 
+display: flex;}
