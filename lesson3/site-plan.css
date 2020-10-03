@@ -1,49 +1,84 @@
+header{
+    text-align: center;
+    font-size: 30px;
+    padding: 1em;
+
+}
 body{
     background-color: rgb(63, 98, 163);
     max-width: 850px;
 margin: auto;
 border-radius: 1em;
+
 }
-nav {
-display: block;
-text-align: center;
-}
-nav ul {
-list-style-type: none;
-margin: 0;
+
+nav ul{
+list-style:none;
+text-align:center;
+margin:0;
 padding: 0;
-overflow: hidden;
-text-align: center;
-}
-nav ul li a {
-display: flex;
-color:  rgb(214, 244, 255);
-text-align: center;
-padding: 0.75rem;
-text-decoration: none;
+padding: 2em;
+border-radius: 10px;
 background-color: rgb(193, 132, 197);
 font-family: 'Arvo', serif;
-margin: 0 auto;
+}
+nav li {
+display:inline-block;
+text-align: center;
 
-
+}
+nav a {
+text-decoration:none;
+display: block;
+padding: 15px;
+color:  rgb(214, 244, 255);
+background-color: rgb(193, 132, 197);
+padding: 15px;
+font-size: 17px;
+text-align:center;
 
 }
 nav a:hover {
 font-family: 'Arvo', serif;
 color: rgb(254, 234, 0);
+
 }
+main{
+    padding: 1em;
+}
+
 header,#heading{
 background-color: rgb(214, 244, 255);
 font-family: 'Fugaz One', cursive;
 }
 main{
 background-color:  rgb(214, 244, 255);
+display: grid;
+grid-template-columns: 1fr;
+font-size: 0.8rem;
+
 }
 p,h3{
 font-family: 'Arvo', serif;
 }
+
 h1{font-family: 'Oswald', sans-serif;}
+p{
+    font-size: 20px;
+}
+ul.persona1{
+    font-size: 25px;
+}
+footer{
+    background-color: white;
+    text-align: center;
+    border-radius: 2em;
+    font-size: 17px;
+}
 @media only screen and (min-width: 37.5em) {
 
 nav ul { 
-display: flex;}
+display: flex;
+grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    }
+}
