@@ -1,3 +1,9 @@
-header{
+.site_name{
     font-family: 'Fugaz One', cursive;
 }
+nav ul{font-family: 'Arvo', serif;}
+nav a:hover{font-family: 'Arvo', serif;}
+p,h3{
+font-family: 'Arvo', serif;
+}
+h1{font-family: 'Oswald', sans-serif;}

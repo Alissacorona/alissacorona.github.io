@@ -9,13 +9,76 @@
     <link rel="stylesheet" href="large.css">
     <link rel="stylesheet" href="small.css">
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo&family=Fugaz+One&family=Oswald&display=swap" rel="stylesheet">
+    <style>
+        nav {
+  margin: 0 auto;
+  max-width: 760px;
+  background-color: rgb(193, 132, 197);}
+
+    .site_name{
+    font-family: 'Fugaz One', cursive;
+}
+.navigation {
+	list-style: none;
+	padding: 0;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+	font-weight: 700;
+}
+.navigation a:hover {
+	color: white;
+    background-color: black;
+    color: rgb(254, 234, 0);
+    background-color: rgb(153, 104, 156);
+}
+.responsive li {
+	display: block;
+}
+nav ul{font-family: 'Arvo', serif;}
+nav a:hover{font-family: 'Arvo', serif;}
+p,h3{
+font-family: 'Arvo', serif;
+}
+h1{font-family: 'Oswald', sans-serif;}
+
+@media only screen and (min-width: 32.5em) {
+	.navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
+}
+
+    </style>
+   
 </head>
 <body>
+
 <header>
- 
-    <h1>  <img src="images/logo.jpg" alt="logo">Over the Rain WX</h1>
+    <img src="images/logo.jpg" alt="logo">
+    <h1 class="site_name">Over the Rain WX</h1>
     <nav>
-        <ul>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
             <li><a href="preston-4.html">Home</a></li>
             <li><a href="#">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
@@ -44,5 +107,10 @@
 <section id="contact_info"></section>
 <h3>Contact Information</h3>
 </footer>
+<script>const hambutton = document.querySelector('.ham');
+    const mainnav = document.querySelector('.navigation')
+    
+    hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+    </script>
 </body>
 </html>
