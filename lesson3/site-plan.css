@@ -1,84 +1,135 @@
-header{
-    text-align: center;
-    font-size: 30px;
-    padding: 1em;
+ #social_media{ background-color: white;
+            padding: 1em;
 
-}
-body{
+        }
+        body{
     background-color: rgb(63, 98, 163);
-    max-width: 850px;
+    max-width: 100%;
 margin: auto;
 border-radius: 1em;
 
-}
-
-nav ul{
-list-style:none;
-text-align:center;
-margin:0;
-padding: 0;
-padding: 2em;
-border-radius: 10px;
-background-color: rgb(193, 132, 197);
-font-family: 'Arvo', serif;
-}
-nav li {
-display:inline-block;
-text-align: center;
 
 }
-nav a {
-text-decoration:none;
-display: block;
-padding: 15px;
-color:  rgb(214, 244, 255);
-background-color: rgb(193, 132, 197);
-padding: 15px;
-font-size: 17px;
-text-align:center;
-
-}
-nav a:hover {
-font-family: 'Arvo', serif;
-color: rgb(254, 234, 0);
-
-}
-main{
+        header{
+    text-align: center;
+    font-size: 30px;
     padding: 1em;
-}
-
-header,#heading{
-background-color: rgb(214, 244, 255);
+    background-color: rgb(214, 244, 255);
 font-family: 'Fugaz One', cursive;
+width: 100%;
+display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5em;
+  
 }
-main{
-background-color:  rgb(214, 244, 255);
-display: grid;
-grid-template-columns: 1fr;
-font-size: 0.8rem;
-
-}
-p,h3{
-font-family: 'Arvo', serif;
-}
-
-h1{font-family: 'Oswald', sans-serif;}
-p{
-    font-size: 20px;
-}
-ul.persona1{
-    font-size: 25px;
-}
-footer{
+        footer{
     background-color: white;
     text-align: center;
     border-radius: 2em;
     font-size: 17px;
+    background-color: rgb(214, 244, 255);
+    
+    font-size: 20px;
+    margin: 0;
+    
 }
-@media only screen and (min-width: 37.5em) {
+main{
+    padding: 1em;
+    border-radius: 15%;
+}
+        nav {
+  margin: 0 auto;
+  max-width: 760px;
+  background-color: rgb(193, 132, 197);
+  padding: 0;
+    font-weight: bold;
+    text-align: center;
+    max-width: 100%;
 
-nav ul { 
-display: flex;
-grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    font-size: 80%;
     }
+
+    .site_name{
+    font-family: 'Fugaz One', cursive;
+}
+.navigation {
+	list-style: none;
+    padding: 0;
+    max-width: 100%;
+}
+.navigation li:first-child {
+	display: block;
+}
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: black;
+    font-weight: 700;
+    max-width: 100%;
+}
+.navigation a:hover {
+	color: white;
+    background-color: black;
+    color: rgb(254, 234, 0);
+    background-color: rgb(153, 104, 156);
+}
+.responsive li {
+	display: block;
+}
+nav ul{font-family: 'Arvo', serif;
+max-width: 100%;}
+nav a:hover{font-family: 'Arvo', serif;
+max-width: 100%;}
+p,h3{
+font-family: 'Arvo', serif;
+}
+h1{font-family: 'Oswald', sans-serif;}
+#weather_sum {
+    border: 1pt dashed black;
+    padding: 1em;
+    margin: 1em;
+    background-color: white;
+}
+#forecast{
+    border: 1pt dashed black;
+    padding: 1em;
+    margin: 1em;
+    background-color: white;
+}
+#article{
+    border: 1pt dashed black;
+    padding: 1em;
+    margin: 1em;
+    background-color: white;
+}
+#title{ 
+    color: rgb(214, 244, 255);
+}
+picture{
+    width: 200px;
+    min-width: 100px;
+}
+@media only screen and (min-width: 32.5em) {
+    nav {
+    display: block;
+}
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
 }
