@@ -50,7 +50,11 @@ max-width: 100%;
 
 font-size: 80%;
 }
-
+h4{
+    color:  rgb(63, 98, 163);
+    font-size: 20px;
+ 
+}
 .site_name{
 font-family: 'Fugaz One', cursive;
 }
