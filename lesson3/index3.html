@@ -14,16 +14,18 @@
       
         <header>
             <h2 id="heading">Over the Rain WX</h2>
-            <nav>
-            <ul>
-                <li><a href="index3.html">Home</a></li>
-                <li><a href="color-scheme.html">Color</a></li>
-                <li><a href="typography.html">Typography</a></li>
-                <li><a href="target-audience.html">Audiance</a></li>
-                
-            </ul>
-        </nav>
+            
     </header>
+    <nav>
+        <ul class="navigation">
+            <li><a class="ham" href="#">&#9776; Menu</a></li>
+            <li><a href="index3.html">Home</a></li>
+            <li><a href="color-scheme.html">Color</a></li>
+            <li><a href="typography.html">Typography</a></li>
+            <li><a href="target-audience.html">Audience</a></li>
+            
+        </ul>
+    </nav>
         <main>
 <div id="name">
     <h1>Name</h1>
@@ -57,6 +59,11 @@
           </p>
           </div>
         </footer>
+        <script>const hambutton = document.querySelector('.ham');
+            const mainnav = document.querySelector('.navigation')
+            
+            hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+            </script>
     </body>
  
 </html>

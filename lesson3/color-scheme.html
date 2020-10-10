@@ -12,17 +12,20 @@
 <body>
        
     <header>
-        <h2 id="heading">Over the Rain WX</h2><nav>
-        <ul>
-            <li><a href="index3.html">Home</a></li>
-            <li><a href="color-scheme.html">Color</a></li>
-            <li><a href="typography.html">Typography</a></li>
-            <li><a href="target-audience.html">Audiance</a></li>
-            
-        </ul>
-    </nav>
+        <h2 id="heading">Over the Rain WX</h2>
+      
 </header>
-<body>
+<nav>
+    <ul class="navigation">
+        <li><a class="ham" href="#">&#9776; Menu</a></li>
+        <li><a href="index3.html">Home</a></li>
+        <li><a href="color-scheme.html">Color</a></li>
+        <li><a href="typography.html">Typography</a></li>
+        <li><a href="target-audience.html">Audience</a></li>
+        
+    </ul>
+</nav>
+
     <main>
         <h1>Color Scheme</h1>
         <p>When I think of a weather report website 
@@ -32,6 +35,7 @@
               of the website. The color scheme of this site plan are 
               going to be the same colors as the website. the colors purple, yellow, and black are going to break up the blue so the website does not get 
               swalled up by the color blue.  </p>
+              <p>Here is a link to my  <a href="https://coolors.co/feea00-d6f4ff-3f62a3-c184c5-000000" >color pallet</a></p>
     </main>
     <footer>
         <div id="contact-info">
@@ -43,6 +47,11 @@
       </p>
       </div>
     </footer>
+    <script>const hambutton = document.querySelector('.ham');
+        const mainnav = document.querySelector('.navigation')
+        
+        hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+        </script>
 </body>
 
 </html>

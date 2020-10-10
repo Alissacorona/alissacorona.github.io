@@ -1,5 +1,6 @@
 #social_media{ background-color: white;
-    padding: 1em;
+    padding: 5px;
+    margin: auto;
 
 }
 body{
@@ -29,7 +30,7 @@ text-align: center;
 border-radius: 2em;
 font-size: 17px;
 background-color: rgb(214, 244, 255);
-
+padding: 1px;
 font-size: 20px;
 margin: 0;
 
