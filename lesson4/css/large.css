@@ -8,6 +8,7 @@ background-color: rgb(63, 98, 163);
 max-width: 100%;
 margin: 0;
 border-radius: 1em;
+display: block;
 
 
 }
@@ -131,7 +132,7 @@ div {
 header div {
     margin: 1em;
 }
-@media only screen and (min-width: 32.5em) {
+@media only screen and (min-width: 35em) {
 nav {
 display: block;
 }
@@ -151,8 +152,10 @@ display: none;
 button {
     display: none;
 }
+.home {display: none;}
 main, footer, #social_media {
     max-width: 80%;
     margin: auto;
 }
+
 }
