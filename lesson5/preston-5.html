@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>
+        Preston Town Page: Alissa Corona
+    </title>
+    <link rel="stylesheet" href="css/large5.css">
+   <link rel="stylesheet" href="css/small.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo&family=Fugaz+One&family=Oswald&display=swap" rel="stylesheet">
+    <style>
+       
+    </style>
+   
+</head>
+<body>
+  <div id="big-banner">
+    Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+    </div>
+<header>
+<pictuer>
+    <img src="images/logo.jpg" alt="logo">
+    </pictuer>
+    <div>
+    <h1 class="site_name">Over the Rain WX</h1>
+    <h4> Let's take a trip down memory rain</h4>
+    </div>
+    <button class="ham" href="#">&#9776; Menu</button>
+</header>
+    <nav>
+      
+        <ul class="navigation">
+           
+            <li><a href="preston-4.html" >Home</a></li>
+            <li><a href="#" class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+            
+        </ul>
+    </nav>
+
+
+    <main>
+      <h1>Preston Idaho</h1>
+      <div class="herodiv">
+          <div class="hero-ph">
+              <img id= "weather_img" src="images/field.jpg"></div>
+       <section class="weathersummary">
+        <h2>Weather Summary</h2>
+        <p>Day </p>
+        <p>Temperature</p>
+       
+       </section>
+      </div>
+
+      <section>
+        <br>
+    
+        <div id="forecast"></div>
+        <h1>Five Day Forecast</h1>
+          <ul id="five_day">
+         
+           <li><p>Monday</p>
+            <img alt ="weather img"src="#">
+            <p>Temperature</p>
+            </li>
+            <li><p>Tuesday</p>
+              <img alt ="weather img"src="#">
+              <p>Temperature</p>
+
+              </li>
+              <li><p>Wednesday</p>
+                <img alt ="weather img"src="#">
+                <p>Temperature</p>
+                </li>
+                <li><p>Thursday</p>
+                  <img alt ="weather img"src="#">
+                  <p>Temperature</p>
+                  </li>
+                  <li><p>Friday</p>
+                    <img alt ="weather img"src="#">
+                    <p>Temperature</p>
+                    </li>
+          </ul>
+        
+        </div>
+      </section>
+   
+      <h1>Daily News</h1>
+      <section>
+        <div id="article">
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor lectus, ornare non sagittis vel, 
+             sollicitudin ut neque. Donec eu aliquam enim. Sed vulputate augue nulla, ac mollis dui sagittis ac. Proin
+              bibendum justo ut metus accumsan eleifend. Pellentesque ut ex sollicitudin, molestie mauris et, tempus 
+              ipsum. Mauris vestibulum turpis at sem euismod, vel pellentesque felis pharetra. Duis leo turpis, ornare
+               euismod ex et, porta consectetur est. Nullam scelerisque eu mi id dictum.</p>
+
+        </div>
+      </section>
+        <h1>Contact Inforamtion</h1>
+<section>
+        <div id=contact_info>
+        
+          <p>Duis fringilla consequat felis, in porta elit egestas <br> 
+             aliquam ac lorem ac, ornare accumsan mi. Aliquam in <br>
+             porta in ornare eget, volutpat sed metus. Etiam <br></p>
+             <img class = "map" src="images/map_preston.png">
+          <div class="social_media">
+          <a href="https://www.youtube.com/" target="_blank">
+              <img
+                src="https://byui-cit.github.io/wdd130/images/icons/color/youtube.png"
+                alt="youtube"
+              />
+            </a>
+            <a href="https://www.twitter.com/" target="_blank">
+              <img
+                src="https://byui-cit.github.io/wdd130/images/icons/color/twitter.png"
+                alt="twitter"
+              />
+            </a>
+            <a href="https://instagram.com/" target="_blank">
+              <img
+                src="https://byui-cit.github.io/wdd130/images/icons/color/instagram.png"
+                alt="instagram"
+              />
+            </a>
+          </div>
+      </div>
+    </section>
+    </main>
+  
+
+
+    <footer>
+        <div id="contact-info">
+            <p class="credits">
+              &copy;
+            <span id="currentYear">2020</span>
+            | Alissa Corona | Idaho | 
+            <a href="https://www.byui.edu/">BYUI Online Learning</a>
+          </p>
+          </div>
+
+    </footer>
+    <script>
+      var dayOfWeek = new Date().getDay() 
+      if (dayOfWeek == 6) {
+document.getElementById("big-banner").style.display = "block";
+}
+    const hambutton = document.querySelector('.ham');
+        const mainnav = document.querySelector('.navigation')
+        
+        hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+        </script>
+</body>
+</html>

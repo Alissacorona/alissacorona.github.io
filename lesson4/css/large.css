@@ -1,3 +1,6 @@
+
+
+
 #social_media{ background-color: white;
     padding: 5px;
     margin: 0;
@@ -25,6 +28,7 @@ justify-content: center;
 padding: .5em;
 
 }
+
 footer{
 background-color: white;
 text-align: center;
@@ -36,6 +40,7 @@ font-size: 20px;
 margin: 0;
 
 }
+
 main{
 padding: 1em;
 border-radius: 15%;
@@ -100,6 +105,7 @@ max-width: 100%;}
 p,h3{
 font-family: 'Arvo', serif;
 }
+
 h1{font-family: 'Oswald', sans-serif;}
 #weather_sum {
 border: 1pt dashed black;
@@ -126,12 +132,9 @@ picture{
 width: 200px;
 min-width: 100px;
 }
-div {
-    display: block;
-}
-header div {
-    margin: 1em;
-}
+
+
+
 @media only screen and (min-width: 35em) {
 nav {
 display: block;
@@ -162,5 +165,12 @@ header {
 }
 h1 {
     display: inline;
+}
+.weathersummary {
+    position: absolute;
+    top: 1em;
+    left: 2em;
+    width: 88%;
+    max-width: 20em; 
 }
 }
