@@ -12,3 +12,6 @@ Body{
 html {
     display: block;
 }
+picture img.in {
+    animation: img-come-in 1s;
+}
