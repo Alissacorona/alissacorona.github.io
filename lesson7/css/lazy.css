@@ -1,4 +1,14 @@
 Body{
     background-color: rgb(214, 153, 238);
-    ;
+    background-attachment: fixed;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 80px;
+    grid-auto-rows: 400px;
+    justify-items: center;
+    align-items: center;
+    grid-gap: 20px;
+}
+html {
+    display: block;
 }
