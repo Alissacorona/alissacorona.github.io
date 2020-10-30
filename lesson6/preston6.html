@@ -6,10 +6,9 @@
     <title>
         Preston Town Page: Alissa Corona
     </title>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo&family=Fugaz+One&family=Oswald&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/large6.css">
    <link rel="stylesheet" href="css/small6.css">
- 
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo&family=Fugaz+One&family=Oswald&display=swap" rel="stylesheet">
     <style>
        
     </style>
@@ -173,8 +172,24 @@
           </div>
 
     </footer>
-    <script src="js/weather_java6">
- 
+    <script >
+      var dayOfWeek = new Date().getDay() 
+      if (dayOfWeek == 6) {
+document.getElementById("big-banner").style.display = "block";
+}
+    const hambutton = document.querySelector('.ham');
+        const mainnav = document.querySelector('.navigation')
+        
+        hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+        WebFont.load({
+  google: {
+    families: [
+       'fontfamilynameofyourchoice'
+    ]
+  }
+});
         </script>
 </body>
 
