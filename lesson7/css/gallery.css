@@ -104,7 +104,32 @@ body{
             font-family: 'Arvo', serif;
             }
             
-h1{font-family: 'Oswald', sans-serif;}
+            h1{font-family: 'Oswald', sans-serif;
+            text-align: center;}
+           
+            picture{
+                justify-items: center;
+               
+    border-radius: 20px;
+    box-shadow: 4px 4px 5px 1px grey;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+            
+            html {
+                display: block;
+            }
+            
+            
+        figcaption {
+            display: block;
+            padding: 0.9em;
+            font: 1em IBM Plex Serif;
+            text-align: center;
+}
+        }
     @media only screen and (min-width: 35em) {
         nav {
         display: block;
@@ -113,7 +138,7 @@ h1{font-family: 'Oswald', sans-serif;}
         display: flex;
         }
         .navigation li {
-        display: block; /* change state in small view */
+        display: block; 
         flex: 1 1 auto;
         }
         .navigation a {
@@ -128,5 +153,4 @@ h1{font-family: 'Oswald', sans-serif;}
         header {
             display: flex;
         }
-        
-        }}
+    }
