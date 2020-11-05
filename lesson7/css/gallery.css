@@ -129,7 +129,7 @@ body{
             font: 1em IBM Plex Serif;
             text-align: center;
 }
-        }
+        
     @media only screen and (min-width: 35em) {
         nav {
         display: block;
