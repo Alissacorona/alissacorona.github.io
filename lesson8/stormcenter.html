@@ -8,9 +8,10 @@
         <title>
             Assignment: Weather or Not    
         </title>
-        <link rel="stylesheet" href="css/gallery.css">
+        <link rel="stylesheet" href="css/stormcenter.css">
     </head>
     <body>
+        
         <header>
             <figure>
                 <img src="images/logo.jpg" alt="logo">
@@ -21,6 +22,7 @@
                 </div>
                 <button class="ham">&#9776; Menu</button>
             </header>
+            
                 <nav>
                   
                     <ul class="navigation">
@@ -29,10 +31,142 @@
                         <li><a href="#">Preston</a></li>
                         <li><a href="#">Soda Springs</a></li>
                         <li><a href="#">Fish Haven</a></li>
-                        <li><a href="#" class="active">Storm Center</a></li>
+                        <li><a href="stormcenter.html" class="active">Storm Center</a></li>
                         <li><a href="gallery-7.html">Gallery</a></li>
                         
                     </ul>
                 </nav>
+
+<main>
+<form action="#">
+<label>
+    Enter Full Name: 
+<input type="text" required>
+</label>
+
+<label>
+    Email
+    <input type="email" placeholder="johnadams@email.com">
+</label>
+
+<label>
+    Phone Number
+    <input type="tel" name="phone" placeholder="###-###-####">
+
+</label>
+
+<label>
+    Zip Code 
+    <input type="number" required>
+</label>
+
+<label>
+    Storm Date
+    <input type="date">
+</label>
+
+<label for="weather-types">
+    Storm Type
+    <input name="weather-types" list="weather-types">
+</label>
+
+<datalist id="weather-types">
+    <options vaule ="Flash Flood"></options>
+    <options vaule ="Hail"></options>
+    <options vaule ="Thunderstorm"></options>
+    <options vaule ="Tornado"></options>
+    <options vaule ="Hurricane"></options>
+</datalist> 
+<label class="flexly" for="stormseverity">Storm Severity &nbsp;&nbsp;&nbsp;
+    <input type="range" id="stormseverity" value="1" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+  
+<datalist id="tickmarks">
+    <option value="0">
+    <option value="1">
+    <option value="2">
+    <option value="3">
+    <option value="4">
+    <option value="5">
+    <option value="6">
+    <option value="7">
+    <option value="8">
+    <option value="9">
+    <option value="10">
+</label>
+
+<label>
+    Storm Region
+    <select name= "region">
+        <option value>
+            Select Region
+        </option>
+        <option value="preston">
+            Preston
+        </option>
+        <option value="Soda Springs">
+           Soda Springs
+        </option>
+        <option value="Fish Haven">
+            Fish Haven
+        </option>
+    </select>
+    
+<label>
+    Are you in Danger
+    <div class="selection">
+        <label for="radio"><input type="radio" id="radio" name="time" value="yes" checked>Yes</label>
+    </div>
+    <div class="selection">
+        <label for="maybe"><input type="radio" id="maybe" name="time" value="maybe">Maybe</label>
+    </div>
+    <div class="selection">
+        <label for="no"><input type="radio" id="no" name="no" value="no">
+       No</label>
+    </div>
+
+
+</label>
+<label>
+    Any Additional Comments?
+    <textarea name="comments"></textarea>
+
+</label>
+        <input type="Submit" value="Submit Weather Report"
+</form>
+
+</main>
+
+
+                
+    <footer>
+        <div id="contact-info">
+            <p class="credits">
+              &copy;
+            <span id="currentYear">2020</span>
+            | Alissa Corona | Idaho | 
+            <a href="https://www.byui.edu/">BYUI Online Learning</a>
+          </p>
+          </div>
+
+    </footer>
+    <script >
+      var dayOfWeek = new Date().getDay() 
+      if (dayOfWeek == 6) {
+document.getElementById("big-banner").style.display = "block";
+}
+    const hambutton = document.querySelector('.ham');
+        const mainnav = document.querySelector('.navigation')
+        
+        hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
+        WebFont.load({
+  google: {
+    families: [
+       'fontfamilynameofyourchoice'
+    ]
+  }
+});
+        </script>
     </body>
     </html>

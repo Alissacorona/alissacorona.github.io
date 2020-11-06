@@ -48,6 +48,7 @@ main{
 padding: 1em;
 border-radius: 15%;
 margin: 0;
+    display: block;
 }
 nav {
 margin: 0 auto;
@@ -269,7 +270,7 @@ display: none;
 button {
     display: none;
 }
-.home {display: none;}
+.home {display: fMAInone;}
 main, footer, #social_media {
     max-width: 80%;
     margin: auto;
