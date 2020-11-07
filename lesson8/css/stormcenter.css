@@ -4,7 +4,8 @@ body{
     margin: 0;
     border-radius: 1em;
     display: block;
-    
+    border-radius: 1em;
+
     
     }
 .active {
@@ -122,6 +123,7 @@ header{
           margin-top: 0em;
           font-family: 'Oswald', sans-serif;
           text-align: left;
+          margin-inline-start: 40px;
       }
       form label{
         display: block;
@@ -132,7 +134,7 @@ header{
       datalist {
         display: none;
     }
-    form label, {
+    form label {
         padding-top: 1rem;
         padding-bottom: 0.3rem;}
 

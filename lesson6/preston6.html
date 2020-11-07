@@ -26,7 +26,7 @@
     <h1 class="site_name">Over the Rain WX</h1>
     <h4> Let's take a trip down memory rain</h4>
     </div>
-    <button class="ham">&#9776; Menu</button>
+    <button class="ham" href="#">&#9776; Menu</button>
 </header>
     <nav>
       
@@ -37,7 +37,7 @@
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
-            <li><a href="gallery-7.html">Gallery</a></li>
+            <li><a href="gallery-7.html" class="active">Gallery</a></li>
             
         </ul>
     </nav>
@@ -171,16 +171,7 @@
           </div>
 
     </footer>
-    <script >
-      var dayOfWeek = new Date().getDay() 
-      if (dayOfWeek == 6) {
-document.getElementById("big-banner").style.display = "block";
-      }
-    const hambutton = document.querySelector('.ham');
-        const mainnav = document.querySelector('.navigation')
-        
-        hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
-        </script>
+  
         <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js">
         WebFont.load({
   google: {
