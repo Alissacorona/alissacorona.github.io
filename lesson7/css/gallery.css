@@ -112,10 +112,7 @@ body{
                
     border-radius: 20px;
     box-shadow: 4px 4px 5px 1px grey;
-    margin-block-start: 20px;
-    margin-block-end: 20px;
-    margin-inline-start: 20px;
-    margin-inline-end: 20px;
+    
 }
             
             html {
