@@ -129,7 +129,7 @@ body{
             font: 1em IBM Plex Serif;
             text-align: center;
 }
-.active {
+   .active {
     background-color: rgb(153, 104, 156); color: #fff;
 }      
     @media only screen and (min-width: 35em) {

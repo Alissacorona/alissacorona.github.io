@@ -1,3 +1,5 @@
+
+
 const allImages = document.querySelectorAll("img[data-src]")
 
 const lazyLoad = (img) => {
