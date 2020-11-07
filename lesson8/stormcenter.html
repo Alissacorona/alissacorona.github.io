@@ -84,13 +84,19 @@
         <option value="Tornado">
            Tornado
            </option>
-           <option value="Hurricane">
+           <option value="Huricane">
            Hurricane
            </option>
     </select>
 </label>
 
-
+<datalist id="weather-types">
+    <options vaule ="Flash Flood"></options>
+    <options vaule ="Hail"></options>
+    <options vaule ="Thunderstorm"></options>
+    <options vaule ="Tornado"></options>
+    <options vaule ="Hurricane"></options>
+</datalist> 
 <label class="flexly" for="stormseverity">Storm Severity &nbsp;&nbsp;&nbsp;
     <input type="range" id="stormseverity" value="1" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
   
@@ -106,6 +112,7 @@
     <option value="8">
     <option value="9">
     <option value="10">
+    </datalist>
 </label>
 
 <label>
@@ -124,9 +131,9 @@
             Fish Haven
         </option>
     </select>
-    
-<label>
-    Are you in Danger
+</label>
+<p>
+    Are you in Danger</p>
     <div class="selection">
         <label for="radio"><input type="radio" id="radio" name="time" value="yes" checked>Yes</label>
     </div>
@@ -145,7 +152,11 @@
     <textarea name="comments"></textarea>
 
 </label>
+<label>
         <input type="Submit" value="Submit Weather Report">
+        </label>
+
+
 </form>
 
 </main>

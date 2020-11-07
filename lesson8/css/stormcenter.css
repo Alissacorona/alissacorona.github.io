@@ -142,6 +142,9 @@ header{
             width: 100%;
             margin-top: 10px;
         }
+        p{
+            font-family: 'Oswald', sans-serif;
+        }
     @media only screen and (min-width: 35em) {
         nav {
         display: block;
