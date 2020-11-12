@@ -1,0 +1,68 @@
+h2{
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-align: center;
+    color:  rgb(216, 137, 204);
+}
+h1 {
+    font-family: 'Yellowtail', cursive;
+    text-align: center;
+    color:  rgb(49, 49, 49);
+    font-size: 40px;
+}
+body {
+    font-family: 'Archivo Narrow', sans-serif;
+    background-color: rgb(226, 228, 228);
+}
+main{
+    width: 85%;
+    margin: auto;
+}
+div.cards {
+    padding: 1em;
+    margin: auto;
+    display: block;
+    width: fit-content;
+    text-align: center;
+    border: 1px solid rgb(235, 235, 235);
+    background-color: rgb(216, 137, 204);
+    box-shadow: 0 0 10px 5px rgb(220, 29, 226);
+    color: white;
+    
+}
+.card {
+
+    padding: 1em;
+    margin: 1em auto;
+    background-color:  rgb(49, 49, 49);
+  
+}
+img {
+    margin: auto;
+    max-width: 75%;
+    box-shadow: 0 0 20px 2px rgb(226, 214, 226);
+}
+footer {
+    background-color:rgb(216, 137, 204);
+    text-align: center;
+    padding: 1em;
+    width: 95%;
+    margin: auto;
+}
+
+@media only screen and (min-width: 40.5em) {
+    div.cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: .5em;
+    }
+    .card{
+        margin: 0 auto;
+    }
+}
+@media only screen and (min-width: 70em) {
+    div.cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
