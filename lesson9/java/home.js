@@ -5,7 +5,7 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-        // console.table(jsonObject); // temporary checking for valid response and data parsing
+        console.table(jsonObject); //temporary checking for valid response and data parsing
         let towns = jsonObject['towns'];
         towns = towns.filter(town => (town.name == "Preston" || town.name == "Soda Springs" || town.name == "Fish Haven"))
         towns.forEach(town => {
