@@ -12,14 +12,14 @@ fetch(requestURL)
             
             let card = document.createElement('section');
             let sect = document.createElement('section')
-            let h3 = document.createElement('h1');
+            let h1 = document.createElement('h1');
             let motto = document.createElement('h4');
             let yearfounded = document.createElement('p');
             let population = document.createElement('p');
             let rain = document.createElement('p');
             let image = document.createElement('img');
 
-            h3.textContent = town.name;
+            h1.textContent = town.name;
             motto.textContent = town.motto;
             yearfounded.textContent = `Year Founded: ${town.yearFounded}`;
             population.textContent = `Population: ${town.currentPopulation}`;
@@ -27,11 +27,11 @@ fetch(requestURL)
             image.setAttribute('src', `images/${town.photo}`);
             image.setAttribute('alt',  `Photo of ${town.name}, Idaho`);
 
-            sect.appendChild(h3);
+            sect.appendChild(h1);
             sect.appendChild(motto);
+            sect.appendChild(rain);
             sect.appendChild(yearfounded);
             sect.appendChild(population);
-            sect.appendChild(rain);
             card.appendChild(sect);
             card.appendChild(image);
             card.setAttribute("class", "card");
