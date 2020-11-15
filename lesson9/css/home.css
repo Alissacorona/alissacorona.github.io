@@ -37,13 +37,16 @@ header{
         font-size: 80%;
         }
         h4{
-            color: rgb(193, 132, 197);
-            font-size: 25px;
-            -webkit-text-stroke: .3px #282828;
-            text-shadow: 0px 8px 4px #282828;
+            margin: 0;
+            font-family: 'Arvo', serif;
+            font-size: 20px;
+           
             
-         
         }
+        picture img {
+            width: 100%;
+        }
+        
         .navigation {
             list-style: none;
             padding: 0;
@@ -89,16 +92,27 @@ header{
                 -webkit-text-stroke: 1px rgb(214, 244, 255);
             
             }
-            
+            div.cards {
+                padding: 1em;
+                margin: auto;
+                display: block;
+                width: fit-content;
+                text-align: center;
+                background-color:  rgb(57, 89, 148);
+                color: rgb(57, 89, 148);
+                
+            }
             h1{font-family: 'Oswald', sans-serif;
+                color: rgb(193, 132, 197);
+                font-size: 25px;
                
             }
             footer{
     
                 text-align: center;
-                color: rgb(214, 244, 255);
+                color: rgb(57, 89, 148);
                 font-size: 17px;
-                background-color:  rgb(57, 89, 148);
+                background-color: rgb(214, 244, 255);;
                 padding: 1%;
                 font-size: 20px;
                 margin: 0;
@@ -107,6 +121,35 @@ header{
               main{
                   display: block;
               }
+              div.cards {
+                padding: .5em;
+                margin: auto;
+                display: block;
+                text-align: center;
+                border: 1px solid white;
+                background-color:  rgb(57, 89, 148);
+                box-shadow: 0 0 10px 5px #ccc;
+                
+            }
+            .card {
+                border: 1px solid black;
+                padding: .5em;
+                margin: .5em auto;
+                background-color: rgb(214, 244, 255);
+            }
+            .card h3 {
+                margin-bottom: 0;
+                padding-bottom: 0;
+            }
+            
+            .card h4 {
+                margin-top: 0;
+                padding-top: 0;
+            }
+            .card img {
+                margin: auto;
+                max-width: 75%;
+            }
               @media only screen and (min-width: 35em) {
                 nav {
                 display: block;
@@ -130,5 +173,26 @@ header{
                 header {
                     display: flex;
                 }
+                
             }
-        
+            @media only screen and (min-width: 40.5em) {
+                .card {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+                .card:nth-child(even) .cardData {
+                    grid-column: 2;
+                }
+                .card:nth-child(even) img {
+                    grid-column: 1;
+                    grid-row: 1;
+                }
+            }
+            @media only screen and (min-width: 70em) {
+                div.cards {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: .5em;
+                }
+            
+            
