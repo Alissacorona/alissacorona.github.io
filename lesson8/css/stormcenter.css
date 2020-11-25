@@ -117,19 +117,41 @@ header{
       main{
           display: block;
       }
+      #first{
+margin-right:3rem;
+width: 50%;
+  border: 5px solid rgb(57, 89, 148);
+  padding: 10px;
+  }
+      #second {
+        width: 50%;
+        border: 5px solid rgb(57, 89, 148);
+        padding: 10px;
+        margin-left: 5rem;
+       }
+       #third{
+        width: 50%;
+        border: 5px solid rgb(57, 89, 148);
+        padding: 10px;
+        margin-left: 5rem;
+       }
+       .grid {
+        display: grid;
+        grid-gap: .5rem;
+        grid-template-columns: 150px 200px 200px 1fr 1fr 1fr 1fr;
+    }
       form{
           padding: 1rem 0;
           display: block;
-          margin-top: 0em;
           font-family: 'Oswald', sans-serif;
-          text-align: left;
+         width: 50%;
           margin-inline-start: 40px;
       }
       form label{
         display: block;
         width: 100%;
         padding-top: 1rem;
-    padding-bottom: 0.3rem;
+       padding-bottom: 0.3rem;
       }
       datalist {
         display: none;
