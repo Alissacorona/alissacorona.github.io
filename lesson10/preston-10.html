@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en-us">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,177 +8,207 @@
         Preston Town Page: Alissa Corona
     </title>
     <link rel="stylesheet" href="css/large6.css">
-   <link rel="stylesheet" href="css/small6.css">
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo&family=Fugaz+One&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/small6.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Arvo&family=Fugaz+One&family=Oswald&display=swap"
+        rel="stylesheet">
     <style>
-       
+
     </style>
-   
+
 </head>
+
 <body>
-  <div id="big-banner">
-    Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.
+    <div id="big-banner">
+        Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.
     </div>
-<header>
-<picture>
-    <img src="images/logo.jpg" alt="logo">
-</picture>
-    <div>
-    <h1 class="site_name">Over the Rain WX</h1>
-    <h4> Let's take a trip down memory rain</h4>
-    </div>
-    <button class="ham" href="#">&#9776; Menu</button>
-</header>
+    <header>
+        <picture>
+            <img src="images/logo.jpg" alt="logo">
+        </picture>
+        <div>
+            <h1 class="site_name">Over the Rain WX</h1>
+            <h4> Let's take a trip down memory rain</h4>
+        </div>
+        <button class="ham" href="#">&#9776; Menu</button>
+    </header>
     <nav>
-      
+
         <ul class="navigation">
-           
-            <li><a href="preston-4.html" >Home</a></li>
+
+            <li><a href="preston-4.html">Home</a></li>
             <li><a href="#" class="active">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="#">Storm Center</a></li>
             <li><a href="gallery-7.html" class="active">Gallery</a></li>
-            
+
         </ul>
     </nav>
 
 
     <main>
-      <h1>Preston Idaho</h1>
-      <div class="herodiv">
-          <div class="hero-ph">
-            
-              <img srcset="images/hero.jpeg" media="(min-width: 500px) and (max-width: 799)" alt = "field" id= "weather_img" src="images/hero.jpeg"></div>
-       <section class="weathersummary">
-        <h3>Weather Summary</h3>
-        <table class ="weather_table">
-            <tbody>
-                <tr>
-        <td class="right">Currently:</td>
-        <td class="left"> <span id="current-temp"></span>&deg; F </td>
-        </tr>
+        <h1>Preston Idaho</h1>
+        <div class="herodiv">
+            <div class="hero-ph">
 
-        <tr>
-            <td class="right">Wind Chill:</td>
-            <td class="left"><span id="wind"></span> </td>
-            </tr>
-
-            <tr>
-                <td class="right">Humidity:</td>
-                <td class="left"> <span id="humidity"></span> % </td>
-                </tr>
-                
-                <tr>
-                    <td class="right">Wind Speed:</td>
-                    <td class="left"> <span id="speed"></span>&deg; MPH  </td>
-                    </tr>
-
-                    <tr>
-                        <td class="right">High:</td>
-                        <td class="left"> <span id="temp_max"></span>&deg; F </td>
+                <img srcset="images/hero.jpeg" media="(min-width: 500px) and (max-width: 799)" alt="field"
+                    id="weather_img" src="images/hero.jpeg"></div>
+            <section class="weathersummary">
+                <h3>Weather Summary</h3>
+                <table class="weather_table">
+                    <tbody>
+                        <tr>
+                            <td class="right">Currently:</td>
+                            <td class="left"> <span id="current-temp"></span>&deg; F </td>
                         </tr>
-    </tbody>
-    </table>
-       </section>
-      </div>
 
-      <section>
-        <br>
-    
-        <div id="forecast">
-            <h1>Five Day Forecast</h1>
-              <ul id="five_day">
-             
-               <li><p id="dayofweek1">Sunday</p>
-                <img src="http://openweathermap.org/img/wn/02d.png" alt="partly cloudy" id="weathericons"></p>
-                <p><span id="temp1"></span> &deg; F </p>
-                </li>
-                <li><p id="dayofweek2">Monday</p>
-                    <img src="http://openweathermap.org/img/wn/03d.png " alt="cloudy" id="weathericons"></p>
-                  <p><span id="temp2"></span> &deg; F</p>
-    
-                  </li>
-                  <li><p id="dayofweek3">Tuesday</p>
-                    <img src="http://openweathermap.org/img/wn/02d.png" alt="partly cloudy" id="weathericons"></p>
-                    <p><span id="temp3"></span> &deg; F</p>
-                    </li>
-                    <li><p id="dayofweek4">Wednesday</p>
-                        <img src="http://openweathermap.org/img/wn/13d.png " alt="snow" id="weathericons"></p>
-                      <p><span id="temp4"></span> &deg; F</p>
-                      </li>
-                      <li><p id="dayofweek5">Thursday</p>
-                        <img src="http://openweathermap.org/img/wn/04d.png " alt="Overcast" id="weathericons"></p>
-                      <p><span id="temp5"></span> &deg; F</p>
-                      </li>
-                     
-              </ul>
-            
-            </div>
-      </section>
-   
-      <h1>Daily News</h1>
-      <section>
-        <div id="article">
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor lectus, ornare non sagittis vel, 
-             sollicitudin ut neque. Donec eu aliquam enim. Sed vulputate augue nulla, ac mollis dui sagittis ac. Proin
-              bibendum justo ut metus accumsan eleifend. Pellentesque ut ex sollicitudin, molestie mauris et, tempus 
-              ipsum. Mauris vestibulum turpis at sem euismod, vel pellentesque felis pharetra. Duis leo turpis, ornare
-               euismod ex et, porta consectetur est. Nullam scelerisque eu mi id dictum.</p>
+                        <tr>
+                            <td class="right">Wind Chill:</td>
+                            <td class="left"><span id="wind"></span> </td>
+                        </tr>
 
+                        <tr>
+                            <td class="right">Humidity:</td>
+                            <td class="left"> <span id="humidity"></span> % </td>
+                        </tr>
+
+                        <tr>
+                            <td class="right">Wind Speed:</td>
+                            <td class="left"> <span id="speed"></span>&deg; MPH </td>
+                        </tr>
+
+                        <tr>
+                            <td class="right">High:</td>
+                            <td class="left"> <span id="temp_max"></span>&deg; F </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
         </div>
-      </section>
+
+        <section>
+            <br>
+
+            <div id="forecast">
+                <h1>Five Day Forecast</h1>
+                <ul id="five_day">
+                    <li>
+                        <p id="dayofweek1">Sunday</p>
+                        <img src="http://openweathermap.org/img/wn/02d.png" alt="partly cloudy" id="weathericons"></p>
+                        <p><span id="temp1"></span> &deg; F </p>
+                    </li>
+                    <li>
+                        <p id="dayofweek2">Monday</p>
+                        <img src="http://openweathermap.org/img/wn/03d.png " alt="cloudy" id="weathericons"></p>
+                        <p><span id="temp2"></span> &deg; F</p>
+
+                    </li>
+                    <li>
+                        <p id="dayofweek3">Tuesday</p>
+                        <img src="http://openweathermap.org/img/wn/02d.png" alt="partly cloudy" id="weathericons"></p>
+                        <p><span id="temp3"></span> &deg; F</p>
+                    </li>
+                    <li>
+                        <p id="dayofweek4">Wednesday</p>
+                        <img src="http://openweathermap.org/img/wn/13d.png " alt="snow" id="weathericons"></p>
+                        <p><span id="temp4"></span> &deg; F</p>
+                    </li>
+                    <li>
+                        <p id="dayofweek5">Thursday</p>
+                        <img src="http://openweathermap.org/img/wn/04d.png " alt="Overcast" id="weathericons"></p>
+                        <p><span id="temp5"></span> &deg; F</p>
+                    </li>
+                   
+                  </ul>
+            </div>
+        </section>
+
+        <h1>Daily News</h1>
+        <section>
+            <div id="article">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla tortor lectus, ornare non sagittis
+                    vel,
+                    sollicitudin ut neque. Donec eu aliquam enim. Sed vulputate augue nulla, ac mollis dui sagittis ac.
+                    Proin
+                    bibendum justo ut metus accumsan eleifend. Pellentesque ut ex sollicitudin, molestie mauris et,
+                    tempus
+                    ipsum. Mauris vestibulum turpis at sem euismod, vel pellentesque felis pharetra. Duis leo turpis,
+                    ornare
+                    euismod ex et, porta consectetur est. Nullam scelerisque eu mi id dictum.</p>
+
+            </div>
+        </section>
         <h1>Contact Inforamtion</h1>
-<section>
-        <div id=contact_info>
-        
-          <p>Duis fringilla consequat felis, in porta elit egestas <br> 
-             aliquam ac lorem ac, ornare accumsan mi. Aliquam in <br>
-             porta in ornare eget, volutpat sed metus. Etiam <br></p>
-             <source srcset="images/map_preston.png" media="(min-width: 500px) and (max-width: 799)">
+        <section>
+            <div id=contact_info>
+
+                <p>Duis fringilla consequat felis, in porta elit egestas <br>
+                    aliquam ac lorem ac, ornare accumsan mi. Aliquam in <br>
+                    porta in ornare eget, volutpat sed metus. Etiam <br></p>
+                <source srcset="images/map_preston.png" media="(min-width: 500px) and (max-width: 799)">
                 <source srcset="images/map_preston.png" media="(min-width: 800px)">
-             <img alt="map of preston-4`" class = "map" src="images/map_preston.png">
-          <div class="social_media">
-          <a href="https://www.youtube.com/" target="_blank">
-              <img
-                src="https://byui-cit.github.io/wdd130/images/icons/color/youtube.png"
-                alt="youtube"
-              />
-            </a>
-            <a href="https://www.twitter.com/" target="_blank">
-              <img
-                src="https://byui-cit.github.io/wdd130/images/icons/color/twitter.png"
-                alt="twitter"
-              />
-            </a>
-            <a href="https://instagram.com/" target="_blank">
-              <img
-                src="https://byui-cit.github.io/wdd130/images/icons/color/instagram.png"
-                alt="instagram"
-              />
-            </a>
-          </div>
-      </div>
-    </section>
+                <img alt="map of preston-4`" class="map" src="images/map_preston.png">
+                <div class="social_media">
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="https://byui-cit.github.io/wdd130/images/icons/color/youtube.png" alt="youtube" />
+                    </a>
+                    <a href="https://www.twitter.com/" target="_blank">
+                        <img src="https://byui-cit.github.io/wdd130/images/icons/color/twitter.png" alt="twitter" />
+                    </a>
+                    <a href="https://instagram.com/" target="_blank">
+                        <img src="https://byui-cit.github.io/wdd130/images/icons/color/instagram.png" alt="instagram" />
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
-  
+
 
 
     <footer>
         <div id="contact-info">
             <p class="credits">
-              &copy;
-            <span id="currentYear">2020</span>
-            | Alissa Corona | Idaho | 
-            <a href="https://www.byui.edu/">BYUI Online Learning</a>
-          </p>
-          </div>
+                &copy;
+                <span id="currentYear">2020</span>
+                | Alissa Corona | Idaho |
+                <a href="https://www.byui.edu/">BYUI Online Learning</a>
+            </p>
+            <a href="https://openweathermap.org">Open Weather Page</a>
+        </div>
 
     </footer>
-  
-        <script src="js/weatherapi.js"></script>
-        <script src="js/forecast.js"></script>
-    
+
+    <script src="js/weatherapi.js"></script>
+    <script src="js/forecast.js"></script>
+
 </body>
 
 </html>
+<!-- 
+                    <li>
+                        <p id="dayofweek1">Sunday</p>
+                        <img src="http://openweathermap.org/img/wn/02d.png" alt="partly cloudy" id="weathericons"></p>
+                        <p><span id="temp1"></span> &deg; F </p>
+                    </li>
+                    <li>
+                        <p id="dayofweek2">Monday</p>
+                        <img src="http://openweathermap.org/img/wn/03d.png " alt="cloudy" id="weathericons"></p>
+                        <p><span id="temp2"></span> &deg; F</p>
+
+                    </li>
+                    <li>
+                        <p id="dayofweek3">Tuesday</p>
+                        <img src="http://openweathermap.org/img/wn/02d.png" alt="partly cloudy" id="weathericons"></p>
+                        <p><span id="temp3"></span> &deg; F</p>
+                    </li>
+                    <li>
+                        <p id="dayofweek4">Wednesday</p>
+                        <img src="http://openweathermap.org/img/wn/13d.png " alt="snow" id="weathericons"></p>
+                        <p><span id="temp4"></span> &deg; F</p>
+                    </li>
+                    <li>
+                        <p id="dayofweek5">Thursday</p>
+                        <img src="http://openweathermap.org/img/wn/04d.png " alt="Overcast" id="weathericons"></p>
+                        <p><span id="temp5"></span> &deg; F</p>
+                    </li>
+ -->
