@@ -349,7 +349,7 @@ padding-bottom: .5em;
                     display: grid;
                     grid-template-columns: repeat(2, 1fr);
                 }
-                .card:nth-child img {
+                .card img {
                     grid-column: 1;
                     grid-row: 1;
                     
@@ -410,8 +410,7 @@ padding-bottom: .5em;
                               display: block;
                               font-family: 'Oswald', sans-serif;
                              width: 50%;
-                              margin-inline-start: 40px;
-                        
+                             
                           }
                           form label{
                             display: block;
