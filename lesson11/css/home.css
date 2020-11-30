@@ -175,6 +175,7 @@ header{
             #contact-info{
                 background-color:  rgb(153, 104, 156);;
             }
+         
             div.cards {
                 padding: 1em;
                 margin: auto;
@@ -191,6 +192,7 @@ header{
                  text-align: center;
                
             }
+          
             img {
                 max-width: 100%;
                 padding: 0;
@@ -297,6 +299,12 @@ header{
         max-width: 20em;
         opacity: .85;
     }
+    article img {
+        width: 25%;
+float: right;
+padding-left: .5em;
+padding-bottom: .5em;
+    }
 }
                 
             }
@@ -316,6 +324,12 @@ header{
                   justify-content: center;
                 
                 }
+                article img {
+                    width: 25%;
+        float: right;
+        padding-left: .5em;
+        padding-bottom: .5em;
+                }
                
             }
             @media only screen and (min-width: 70em) {
@@ -324,6 +338,11 @@ header{
                     grid-template-columns: repeat(3, 1fr);
                     gap: .5em;
                 }
-                
+                article img {
+                    width: 25%;
+        float: right;
+        padding-left: .5em;
+        padding-bottom: .5em;
+                }
             
             }
