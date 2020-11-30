@@ -260,6 +260,9 @@ header{
                 margin: auto;
                 max-width: 100%;
             }
+    
+               
+            
               @media only screen and (min-width: 35em) {
                 nav {
                 display: block;
@@ -305,9 +308,12 @@ float: right;
 padding-left: .5em;
 padding-bottom: .5em;
     }
+   
+     
+    
 }
                 
-            }
+            
             @media only screen and (min-width: 40.5em) {
                 .card {
                     display: grid;
@@ -329,8 +335,9 @@ padding-bottom: .5em;
         float: right;
         padding-left: .5em;
         padding-bottom: .5em;
-                }
-               
+                }     
+                
+              
             }
             @media only screen and (min-width: 70em) {
                 div.cards {
@@ -344,5 +351,63 @@ padding-bottom: .5em;
         padding-left: .5em;
         padding-bottom: .5em;
                 }
+                
+                #first{
+                    margin-right:3rem;
+                    width: 50%;
+                      border: 5px solid rgb(57, 89, 148);
+                      padding: 10px;
+                      }
+                          #second {
+                            width: 50%;
+                            border: 5px solid rgb(57, 89, 148);
+                            padding: 10px;
+                            margin-left: 5rem;
+                           }
+                           #third{
+                            width: 50%;
+                            border: 5px solid rgb(57, 89, 148);
+                            padding: 10px;
+                            margin-left: 5rem;
+                           }
+                           .grid {
+                            display: grid;
+                            grid-gap: .5rem;
+                            grid-template-columns: 150px 200px 200px 1fr 1fr 1fr 1fr;
+                        }
+                          form{
+                              padding: 1rem 0;
+                              display: block;
+                              font-family: 'Oswald', sans-serif;
+                             width: 50%;
+                              margin-inline-start: 40px;
+                        
+                          }
+                          form label{
+                            display: block;
+                            width: 100%;
+                            padding-top: 1rem;
+                           padding-bottom: 0.3rem;
+                          }
+                          datalist {
+                            display: none;
+                        }
+                        form label {
+                            padding-top: 1rem;
+                            padding-bottom: 0.3rem;}
+                    
+                            form input[type="submit"] {
+                                width: 100%;
+                                margin-top: 10px;
+                              
+                            }
+                          
+                            form {
+                                display: grid;
+                                
+                                gap: .5em;
+                                margin: auto;
+                                
+                            }
             
             }
