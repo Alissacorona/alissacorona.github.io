@@ -144,7 +144,15 @@ header{
                 height: 250px;
                 display: flex;
             }
-            
+            .footer_info{
+                overflow: hidden;
+                
+            }
+            #contact{
+                text-align: left;
+                justify-content: right;
+            }
+           
             p,h3{
             font-family: 'Arvo', serif;
             }
@@ -157,6 +165,10 @@ header{
             .slogan{
                 font-size: 20px;
                color: white;
+            }
+
+            #contact-info{
+                background-color:  rgb(153, 104, 156);;
             }
             div.cards {
                 padding: 1em;
@@ -171,6 +183,7 @@ header{
             h1{font-family: 'Oswald', sans-serif;
                 color: rgb(193, 132, 197);
                 font-size: 25px;
+                 text-align: center;
                
             }
             img {
@@ -277,6 +290,7 @@ header{
         left: 2em;
         width: 88%;
         max-width: 20em;
+        opacity: .85;
     }
 }
                 
