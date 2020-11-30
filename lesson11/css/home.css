@@ -48,10 +48,11 @@ header{
         font-size: 80%;
         }
         h4{
-            margin: 0;
-            font-family: 'Arvo', serif;
-            font-size: 20px;
-           
+            color: rgb(193, 132, 197);
+            font-size: 25px;
+            -webkit-text-stroke: .3px #282828;
+            text-shadow: 0px 8px 4px #282828;
+            
             
         }
         picture img {
@@ -100,12 +101,13 @@ header{
             .herodiv {
                 margin: 10px auto;
                 position: relative;
-            
+                display: block;
                 width: 800px;
                 height: 200px;
             
             
             }
+           
             #weather_img{
                 max-width: 100%;
                 padding: 0;
@@ -175,10 +177,21 @@ header{
                 -webkit-text-stroke: 1px rgb(214, 244, 255);
             
             }
-            .slogan{
-                font-size: 20px;
-               color: white;
+            .logo{
+                width: 70%;
+    max-width: 400px;
             }
+            .slogan{
+                font-size: 24px;
+            
+            }
+            .gallery_grid{  
+                margin-bottom: 1em;
+        }
+        .gallery_grid figure img {
+            width: 100%;
+            max-width: 400px;
+        }
 
             #contact-info{
                 background-color:  rgb(153, 104, 156);;
@@ -201,11 +214,12 @@ header{
                
             }
           
-            img {
+           .logo{
                 max-width: 100%;
                 padding: 0;
                 margin: 0 auto;
                 justify-content: center;
+                width: 4em;
             }
             footer{
     
@@ -218,6 +232,9 @@ header{
                 margin: 0;
                 
                 }
+                #middle{
+                text-align: center;
+                }
               main{
                 max-width: 80%;
                 margin: auto;
@@ -227,6 +244,8 @@ header{
                 display: block;
                 margin-bottom: 1em;
                 overflow: hidden;
+                max-width: 70%;
+                margin: auto;
               }
               h6{ font-family: 'Oswald', sans-serif;
                   text-align: center;

@@ -17,44 +17,117 @@ body{
         padding: 1em;
         font-size: 18px;
     }
+    .gallery_grid{  
+        margin-bottom: 1em;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2em;
+}
+#contact{
+    text-align: left;
+    justify-content: right;
+}
+
+.gallery_grid figure img {
+    margin: auto;
+    width: 70%;
+    max-width: 400px;
+}
     div {
         display: block;
     }
     header{
-    text-align: center;
-    font-size: 25px;
-    padding: 1em;
-    background-color:  rgb(57, 89, 148);
-    font-family: 'Fugaz One', cursive;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: .5em;
-    
-    }
-    footer{
-    
-    text-align: center;
-    color: rgb(214, 244, 255);
-    font-size: 17px;
-    background-color:  rgb(57, 89, 148);
-    padding: 1%;
-    font-size: 20px;
-    margin: 0;
-    
-    }
-    nav {
-        margin: 0 auto;
-        max-width: 760px;
-        background-color: rgb(193, 132, 197);
-        padding: 0;
-        font-weight: bold;
         text-align: center;
-        max-width: 100%;
+        font-size: 25px;
+        padding: 1em;
+        background-color:  rgb(57, 89, 148);
+        font-family: 'Fugaz One', cursive;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: .5em;
+    
+    }
+  
+        footer{
+    
+            text-align: center;
+            color: rgb(214, 244, 255);
+            font-size: 17px;
+            background-color: rgb(57, 89, 148);
+            padding: 1%;
+            font-size: 20px;
+            margin: 0;
+            
+    
+    }
+    #contact-info{
+        background-color:  rgb(153, 104, 156);;
+    }
+ 
+    .footer_info{
+        overflow: hidden;
         
-        font-size: 80%;
-        }
+    }
+    
+        nav {
+            margin: 0 auto;
+            max-width: 760px;
+            background-color: rgb(193, 132, 197);
+            padding: 0;
+            font-weight: bold;
+            text-align: center;
+            max-width: 100%;
+            
+            font-size: 80%;
+            }
+            .navigation {
+                list-style: none;
+                padding: 0;
+                max-width: 100%;
+                }
+                .navigation li:first-child {
+                display: block;
+              
+                }
+                .navigation li {
+                display: none;
+                }
+                .navigation a {
+                display: block;
+                padding: 0.75rem;
+                text-align: left;
+                text-decoration: none;
+                color: black;
+                font-size: 16px;
+                font-weight: 700;
+                max-width: 100%;
+                }
+                .navigation a:hover {
+                color: white;
+                background-color: black;
+                color: rgb(254, 234, 0);
+                background-color: rgb(153, 104, 156);
+                }
+                .responsive li {
+                display: block;
+                }
+                nav ul{font-family: 'Arvo', serif;
+                max-width: 100%;}
+                .active {
+                    background-color: rgb(153, 104, 156); color: #fff;
+                } 
+                nav a:hover{font-family: 'Arvo', serif;
+                max-width: 100%;}
+                .herodiv {
+                    margin: 10px auto;
+                    position: relative;
+                    display: block;
+                    width: 800px;
+                    height: 200px;
+                
+                
+                }
         h4{
             color: rgb(193, 132, 197);
             font-size: 25px;
@@ -62,6 +135,24 @@ body{
             text-shadow: 0px 8px 4px #282828;
             
          
+        }
+        .logo{
+            max-width: 100%;
+            padding: 0;
+            margin: 0 auto;
+            justify-content: center;
+            width: 4em;
+        }
+        .slogan{
+            font-size: 24px;
+        
+        }
+        .site_name{
+            color: rgb(193, 132, 197);
+            font-family: 'Oswald', sans-serif;
+            font-size: 60px;
+            -webkit-text-stroke: 1px rgb(214, 244, 255);
+        
         }
         .navigation {
             list-style: none;
@@ -105,8 +196,11 @@ body{
             }
             
             h1{font-family: 'Oswald', sans-serif;
-            text-align: center;}
-           
+                color: rgb(193, 132, 197);
+                font-size: 32px;
+                 text-align: center;
+               
+            }
             picture{
                 justify-items: center;
                
@@ -129,6 +223,57 @@ body{
    .active {
     background-color: rgb(153, 104, 156); color: #fff;
 }      
+@media only screen and (min-width: 35em) {
+    nav {
+    display: block;
+    }
+    .navigation {
+    display: flex;
+    }
+    .navigation li {
+    display: block; 
+    flex: 1 1 auto;
+    }
+    .navigation a {
+    text-align: center;
+    }
+    .navigation li:first-child {
+    display: none;
+    }
+    button {
+        display: none;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    main,
+footer,
+#social_media {
+max-width: 70%;
+margin: auto;
+}
+.weathersummary {
+position: absolute;
+top: 1em;
+left: 2em;
+width: 88%;
+max-width: 20em;
+opacity: .85;
+}
+article img {
+width: 25%;
+float: right;
+padding-left: .5em;
+padding-bottom: .5em;
+}
+
+
+
+}
+    
+
     @media only screen and (min-width: 35em) {
         nav {
         display: block;
@@ -152,4 +297,15 @@ body{
         header {
             display: flex;
         }
+        main,
+        footer,
+        #social_media {
+            max-width: 70%;
+            margin: auto;
+        }
+        .gallery_grid{  
+            max-width: 70%;
+            margin: auto;
     }
+    }
+   
