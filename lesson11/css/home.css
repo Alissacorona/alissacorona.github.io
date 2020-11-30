@@ -56,6 +56,7 @@ header{
         }
         picture img {
             width: 100%;
+        
         }
         
         .navigation {
@@ -103,7 +104,14 @@ header{
                 width: 800px;
                 height: 200px;
             
+            
             }
+            #weather_img{
+                max-width: 100%;
+                padding: 0;
+                margin: 0 auto;
+                
+                }
             .weather_table {
                 margin: 1em 2em;
                 padding-bottom: 1em;
