@@ -235,6 +235,9 @@ header{
                 #middle{
                 text-align: center;
                 }
+                #end{
+                    text-align: center;
+                }
               main{
                 max-width: 80%;
                 margin: auto;
