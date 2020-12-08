@@ -1,9 +1,27 @@
-/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media only screen and (min-width: 600px) {
+.scootsheader h1{
+    font-family: 'Pacifico', cursive;
+    }
+    h1{
+        font-family: 'Nanum Gothic', sans-serif;
+ 
+    }
+    h2{
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    h3{
+        font-family: 'Nanum Gothic', sans-serif;
+    }
 
+    h4{
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+    p{
+        font-family: 'Nanum Gothic', sans-serif;
+    }
+  nav{
+    font-family: 'Bebas Neue', cursive;
 
-
-
-
-
-}
+  }
+  footer{
+    font-family: 'Nanum Gothic', sans-serif;
+  }
