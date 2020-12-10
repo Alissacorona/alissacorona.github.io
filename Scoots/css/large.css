@@ -1,8 +1,8 @@
 /* For desktop: */
-@media only screen and (max-width: 600px) {
-h1{
-    font-family: 'Nanum Gothic', sans-serif;
+@media only screen and (max-width: 70em) {
+
+footer{
+    text-align: left;
 }
 
-
- }
+}

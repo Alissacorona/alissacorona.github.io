@@ -1,29 +1,27 @@
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media only screen and (min-width: 314px) {
-
-    h1{
-        font-family: 'Nanum Gothic', sans-serif;
-    }
+@media only screen and (min-width: 35em) {
     nav {
-        display: block;
-        }
-        .navigation {
-        display: flex;
-        }
-        .navigation li {
-        display: block; 
-        flex: 1 1 auto;
-        }
-        .navigation a {
-        text-align: center;
-        }
-        .navigation li:first-child {
+    display: block;
+    }
+    .navigation {
+    display: flex;
+    }
+    .navigation li {
+    display: block; 
+    flex: 1 1 auto;
+    }
+    .navigation a {
+    text-align: center;
+    }
+    .navigation li:first-child {
+    display: none;
+    }
+    button {
         display: none;
-        }
-        button {
-            display: none;
-        }
-
-
-
-}
+    }
+    footer{
+        max-width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+  }
