@@ -1,8 +1,18 @@
 /* For desktop: */
-@media only screen and (max-width: 70em) {
+@media only screen and (min-width: 992px) {
 
 footer{
     text-align: left;
 }
-
+.scootsheader h1 h4{
+    display: flex;
+    text-align: left;
+}
+.rental-info table{
+    margin: 0 auto;
+}
+.hero-img{
+    margin: auto;
+    width: 100%;
+}
 }

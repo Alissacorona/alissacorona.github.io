@@ -1,5 +1,5 @@
 /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 600px) {
     nav {
     display: block;
     }
@@ -23,5 +23,8 @@
         max-width: 70%;
         margin: auto;
         text-align: center;
+    }
+    .scootsheader h1 h4 {
+        display: flex;
     }
   }
