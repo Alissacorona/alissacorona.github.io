@@ -55,6 +55,7 @@ margin: auto;
       text-align: left;
     max-width: 80%;
       padding: 1em;
+      
       font-size: 20px;
      margin: 0 auto;
       
@@ -136,21 +137,82 @@ margin: auto;
 
 
         }
+        .rental-info {
+          position: absolute;
+        }
+        .herodiv {
+          margin: 10px auto;
+          position: relative;
+          display: block;
+          width: 800px;
+          height: 200px;
+      }
+      .hero-ph {
+        margin: 10px auto;
+        width: 100%;
+        display: flex;
+    }
+    #weather_img{
+      max-width: 100%;
+      margin: 0 auto;
+      }
+  .weather_table {
+      margin: 1em 2em;
+      padding-bottom: 1em;
+  }
+  .weathersummary {
+    position: absolute;
+    top: 12px;
+    left: 50px;
+    background: radial-gradient(#eee, #A27CA2 );
+  
+    padding: 1em;
+    box-shadow: 0 0 30px #111;
+
+}
         .rental-info h1{
           text-align: center;
         }
-        .rental-info th, td
-        {
-          border: 4px solid black;
-          padding: 1em;
-          
         
-        }
         .weather-info h1{
           text-align: right;
           padding: 2%;
         }
-      
+      .rental-info,
+       th{
+        position: block;
+        border: 4px solid black;
+        padding: 1em;
+        
+      }
+
+ 
+      .forecast {
+        padding: 1em;
+        margin: auto;
+        max-width: 90%;
+        position: relative;
+    }
+
+    
+  #five_day {
+    display: flex;
+    text-align: center;
+    padding: 1em;
+    
+    justify-content: center;
+    
+    list-style: none;
+    padding: 1em;
+    
+}
+.forecast ul li {
+    flex: 1 1 auto;
+    border: 1px solid black;
+    background-color:  #A27CA2;
+    color: white;
+    font-family: 'Arvo', serif;
+}
 
     h1{
         font-family: 'Nanum Gothic', sans-serif;
@@ -175,19 +237,27 @@ margin: auto;
     font-family: 'Nanum Gothic', sans-serif;
     padding: 1em;
     display: block;
+    background-color: #F6F1A2;
   }
   #googlemaps{
     overflow: hidden;
   }
 
- 
-  footer{
-    background-color: #F6F1A2;
-  }
 body{
   background-color: #74D2D2 ;
+  max-width: 100%;
+  margin: 0;
+  border-radius: 1em;
+  display: block;
+  border-radius: 1em;
 }
 footer, #social_media {
 
   margin: auto;
+}
+main,
+footer,
+#social_media {
+    max-width: 80%;
+    margin: auto;
 }

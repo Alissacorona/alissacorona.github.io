@@ -1,4 +1,4 @@
-const apiURLforecast = const apiURLforecast = "http://api.openweathermap.org/data/2.5/forecast?Geo coords= 20.5083, -86.9458 &units=imperial&appid=57c6f64b2f9ae9242a51f86539052cf5";
+const apiURLforecast = "http://api.openweathermap.org/data/2.5/forecast?lat=20.5083&lon=-86.9458&units=imperial&appid=57c6f64b2f9ae9242a51f86539052cf5";
 fetch(apiURLforecast)
     .then((response) => response.json())
     .then((jsObject) => {

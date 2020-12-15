@@ -51,52 +51,121 @@ y=Pacifico&display=swap" rel="stylesheet">
         </nav>
     
         <main>
-            <img class="hero-img" src="images/hero_img.jpg">
-        <div class="rental-info">
-            <h1>Rental Information</h1>
-            <table>
-                <tr>
-                    <th>
-                        Honda Motor Scooters  
-                    </th>
-                    <th>
-                        ATV Side-by-Side
-                    </th>
-                    <th>
-                        Jeep Rentals
-                    </th>
-                </tr>
-                <tr>
-                    <td>
-                        Honda Metropolitan (49cc) - 1 person
-                    </td>
-                    <td>
-                        Honda Pioneer 1000
-                    </td>
-                    <td>
-                        4-door Jeep Wrangler - manual with A/C - 5 people max
+            <h1>Scoots</h1>
+            <div class="herodiv">
+                <div class="hero-ph">
+    
+                    <img  srcset="images/hero_img.jpg" media="(min-width: 500px) and (max-width: 799px)" alt="field"
+                        id="weather_img" src="images/hero_img.jpg" ></div>
+                   
+                <section class="weathersummary">
+                    <h3>Weather Summary</h3>
+                    <table class="weather_table">
+                        <tbody>
+                            <tr>
+                                <td class="right">Currently:</td>
+                                <td class="left"> <span id="current-temp"></span>&deg; F </td>
+                            </tr>
+    
+                            <tr>
+                                <td class="right">Wind Chill:</td>
+                                <td class="left"><span id="wind"></span> </td>
+                            </tr>
+    
+                            <tr>
+                                <td class="right">Humidity:</td>
+                                <td class="left"> <span id="humidity"></span> % </td>
+                            </tr>
+    
+                            <tr>
+                                <td class="right">Wind Speed:</td>
+                                <td class="left"> <span id="speed"></span>&deg; MPH </td>
+                            </tr>
+    
+                            <tr>
+                                <td class="right">High:</td>
+                                <td class="left"> <span id="temp_max"></span>&deg; F </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
 
-                    </td>
-                </tr>
-                    <tr>
-                        <td>
-                            Honda Dio (110cc) - 2 person
-                        </td>
-                        <td>
-                            2-door Jeep Wrangler - open air - manual - 4 people max
-                        </td>
-                    </tr>
+      <h1><br><br><br> <br><br><br>Five Day Forecast</h1>
+            <section class="forecast" >
+                <br>
+               
+                <div>
+                   
+                    <ul id="five_day">
+                        <li>
+                            <p id="dayofweek1">Sunday</p>
+                            <img src="http://openweathermap.org/img/wn/01d.png" alt="sun" id="weathericons">
+                            <p><span id="temp1"></span> &deg; F </p>
+                        </li>
+                        <li>
+                            <p id="dayofweek2">Monday</p>
+                            <img src="http://openweathermap.org/img/wn/03d.png " alt="cloudy" id="weathericons">
+                            <p><span id="temp2"></span> &deg; F</p>
+    
+                        </li>
+                        <li>
+                            <p id="dayofweek3">Tuesday</p>
+                            <img src="http://openweathermap.org/img/wn/02d.png" alt="partly cloudy" id="weathericons">
+                            <p><span id="temp3"></span> &deg; F</p>
+                        </li>
+                        <li>
+                            <p id="dayofweek4">Wednesday</p>
+                            <img src="http://openweathermap.org/img/wn/01d.png " alt="sun" id="weathericons">
+                            <p><span id="temp4"></span> &deg; F</p>
+                        </li>
+                     
+                      </ul>
+                </div>
+            </section>
+
+     
+     <section class="rental_info">
+        <br><br><h1>Rental Information</h1>
+        <table>
+            <tr>
+                <th>
+                    Honda Motor Scooters  
+                </th>
+                <th>
+                    ATV Side-by-Side
+                </th>
+                <th>
+                    Jeep Rentals
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    Honda Metropolitan (49cc) - 1 person
+                </td>
+                <td>
+                    Honda Pioneer 1000
+                </td>
+                <td>
+                    4-door Jeep Wrangler - manual with A/C - 5 people max
+
+                </td>
+            </tr>
                 <tr>
                     <td>
-                        Honda PCX150 (149cc) - 2 person
+                        Honda Dio (110cc) - 2 person
+                    </td>
+                    <td>
+                        2-door Jeep Wrangler - open air - manual - 4 people max
                     </td>
                 </tr>
-            </table>
-        </div>
-     <div class= "weather-info">
-        <h1>Weather Forecast</h1>
-        
-     </div>
+            <tr>
+                <td>
+                    Honda PCX150 (149cc) - 2 person
+                </td>
+            </tr>
+        </table>
+    </section>
         </main>
         <footer>  
         <div id="googlemaps">
@@ -146,6 +215,8 @@ y=Pacifico&display=swap" rel="stylesheet">
         <script src="js/banner.js"></script>
         <script src="js/navscoots.js"></script>
         <script src="js/button.js"></script>
+        <script src="js/forecast.js"></script>
+        <script src="js/weatherapi.js"></script>
     </body>
     
     </html>
