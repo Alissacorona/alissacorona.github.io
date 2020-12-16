@@ -400,7 +400,7 @@ max-width: 400px;
   flex-wrap: wrap;
   padding: 0 4px;
   background-color: #B2E6E6 ;
-  padding: ;
+
 }
 
 
@@ -430,7 +430,7 @@ max-width: 400px;
     display: block;
     text-align: center;
     border: 1px solid white;
-    background-color:  rgb(57, 89, 148);
+    background-color:  #A27CA2;
     box-shadow: 0 0 10px 5px #ccc;
     
 }
