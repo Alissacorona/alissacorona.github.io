@@ -21,5 +21,8 @@ footer{
 #funthings img{
     justify-content: right;
     }
-    
+    .column {
+        flex: 50%;
+        max-width: 50%;
+      }
 }

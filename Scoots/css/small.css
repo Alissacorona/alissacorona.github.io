@@ -35,4 +35,8 @@
         max-width: 20em;
         opacity: .85;
     }
+    .column {
+        flex: 100%;
+        max-width: 80%;
+      }
   }
