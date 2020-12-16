@@ -21,8 +21,11 @@ footer{
 #funthings img{
     justify-content: right;
     }
-    .column {
-        flex: 50%;
-        max-width: 50%;
+    .rental_info{
+        font-family: 'Nanum Gothic', sans-serif;
+        padding:1em;
+        max-width: 80%;
+        margin: auto;
       }
+ 
 }

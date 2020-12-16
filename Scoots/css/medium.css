@@ -400,10 +400,7 @@ max-width: 400px;
   flex-wrap: wrap;
   padding: 0 4px;
   background-color: #B2E6E6 ;
-  padding: 1em;
-  font-size: 20px;
-  margin: auto;
-  font-family: 'Nanum Gothic', sans-serif;
+  padding: ;
 }
 
 
@@ -417,4 +414,14 @@ max-width: 400px;
   margin-top: 8px;
   vertical-align: middle;
   width: 100%;
+}
+.rental_info{
+  font-family: 'Nanum Gothic', sans-serif;
+  padding:1em;
+  
+  position: relative;
+}
+.rental-info td{
+  padding: 1em;
+
 }

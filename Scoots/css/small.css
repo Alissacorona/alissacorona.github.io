@@ -39,4 +39,10 @@
         flex: 100%;
         max-width: 80%;
       }
+      .gallery_grid img{
+        margin: auto;
+    }
+    .rental_info table{
+        position: relative;
+    }
   }
