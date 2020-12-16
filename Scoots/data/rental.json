@@ -3,55 +3,55 @@
    {
        "Type": "Honda Metro Scooter",
        "Max.Persons": "1",
-       "Reservation:HalfDay(3hrs)": "$20",
-       "Reservation:FullDay": "$30",
-       "Walk-In:HalfDay(3hrs)": "$25",
-       "Walk-In:FullDay": "$35"
+       "ReservationHalfDayThreeHours": "$20",
+       "ReservationFullDay": "$30",
+       "WalkInHalfDayThreeHours": "$25",
+       "WalkInFullDay": "$35"
 
    },
    {
     "Type": "Honda Dio Scooter",
     "Max.Persons": "2",
-    "Reservation:HalfDay(3hrs)": "$30",
-    "Reservation:FullDay": "$40",
-    "Walk-In:HalfDay(3hrs)": "$35",
-    "Walk-In:FullDay": "$45"
+    "ReservationHalfDayThreeHours": "$30",
+    "ReservationFullDay": "$40",
+    "WalkInHalfDayThreeHours": "$35",
+    "WalkInFullDay": "$45"
 
 },
 {
     "Type": "Honda PCX150 Scooter",
     "Max.Persons": "2",
-    "Reservation:HalfDay(3hrs)": "$40",
-    "Reservation:FullDay": "$50",
-    "Walk-In:Half Day(3hrs)": "$45",
-    "Walk-In:FullDay": "$55"
+    "ReservationHalfDayThreeHours": "$40",
+    "ReservationFullDay": "$50",
+    "WalkInHalfDayThreeHours": "$45",
+    "WalkInFullDay": "$55"
 
 },
 {
     "Type": "Honda Pioneer ATV",
     "Max.Persons": "4",
-    "Reservation:HalfDay(3hrs)": "$50",
-    "Reservation:FullDay": "$70",
-    "Walk-In:HalfDay(3hrs)": "$60",
-    "Walk-In:FullDay": "$80"
+    "ReservationHalfDayThreeHours": "$50",
+    "ReservationFullDay": "$70",
+    "WalkInHalfDayThreeHours": "$60",
+    "WalkInFullDay": "$80"
 
 },
 {
     "Type": "Jeep Wrangler - 4 door with a/c",
     "Max.Persons": "5",
-    "Reservation:HalfDay(3hrs)": "$70",
-    "Reservation:FullDay": "$100",
-    "Walk-In:Half Day(3hrs)": "$85",
-    "Walk-In:FullDay": "$125"
+    "ReservationHalfDayThreeHours": "$70",
+    "ReservationFullDay": "$100",
+    "WalkInHalfDayThreeHours": "$85",
+    "WalkInFullDay": "$125"
 
 },
 {
     "Type": "Jeep Wrangler - 2 door",
     "Max.Persons": "4",
-    "Reservation:HalfDay(3hrs)": "$60",
-    "Reservation:FullDay": "$85",
-    "Walk-In:HalfDay(3hrs)": "$70",
-    "Walk-In:FullDay": "$90"
+    "ReservationHalfDayThreeHours": "$60",
+    "ReservationFullDay": "$85",
+    "WalkInHalfDayThreeHours": "$70",
+    "WalkInFullDay": "$90"
 
 }
 
