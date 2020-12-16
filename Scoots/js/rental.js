@@ -5,38 +5,34 @@ fetch(requestURL)
         return response.json();
     })
     .then(function (jsonObject) {
-        console.table(jsonObject); //temporary checking for valid response and data parsing
+        console.table(jsonObject); 
         let rentals = jsonObject['rentals'];
-        rentals = rentals.filter(rentals => (rental.type == "Honda Metro Scooter" || rental.type == "Honda Dio Scooter" || rental.type == "Honda PCX150 Scooter" || rental.type == "Honda Pioneer ATV" || rental.type == "Jeep Wrangler - 4 door with a/c" || rental.type == "Jeep Wrangler - 2 door"))
+        rentals = rental.filter(rental => (rental.type == "Honda Metro Scooter" || rental.type == "Honda Dio Scooter" || rental.type == "Honda PCX150 Scooter" || rental.type == "Honda Pioneer ATV" || rental.type == "Jeep Wrangler - 4 door with a/c" || rental.type == "Jeep Wrangler - 2 door"))
         rentals.forEach(rental => {
             
             let card = document.createElement('section');
             let sect = document.createElement('section')
             let h1 = document.createElement('h1');
-            let Reservation:HalfDay(3hrs) = document.createElement('h4');
-            let Reservation:FullDay = document.createElement('h4')
-            let Reservation:HalfDay(3hrs) = document.createElement('h4');;
-            let Reservation:HalfDay(3hrs) = document.createElement('h4');
-            let yearfounded = document.createElement('p');
-            let population = document.createElement('p');
-            let rain = document.createElement('p');
-            let image = document.createElement('img');
+            let ReservationHalfDayThreeHours = document.createElement('h4');
+            let ReservationFullDay = document.createElement('h4')
+            let WalkInHalfDayThreeHours = document.createElement('h4');;
+            let WalkInFullDay = document.createElement('h4');
+        
 
-            h1.textContent = town.name;
-            motto.textContent = town.motto;
-            yearfounded.textContent = `Year Founded: ${town.yearFounded}`;
-            population.textContent = `Population: ${town.currentPopulation}`;
-            rain.textContent = `Average Rainfall: ${town.averageRainfall}`;
-            image.setAttribute('src', `images/${town.photo}`);
-            image.setAttribute('alt',  `Photo of ${town.name}, Idaho`);
-
+            h1.textContent = rental.name;
+            ReservationHalfDayThreeHours.textContent = `Reservation: Half Day (3hrs) ${rental.ReservationHalfDayThreeHours}`;
+            ReservationFullDay.textContent = `Reservation: Full Day ${rental.ReservationFullDay}`;
+            WalkInHalfDayThreeHours.textContent = `Walk-In: Half Day (3hrs) ${rental.WalkInHalfDayThreeHours}`;
+            WalkInFullDay.textContent = `Walk-In: Full Day ${rental.WalkInFullDay}`;
+           
             sect.appendChild(h1);
-            sect.appendChild(motto);
-            sect.appendChild(rain);
-            sect.appendChild(yearfounded);
-            sect.appendChild(population);
+            sect.appendChild(ReservationHalfDayThreeHours);
+            sect.appendChild(ReservationFullDay);
+            sect.appendChild(WalkInHalfDayThreeHours);
+            sect.appendChild(WalkInFullDay);
+            
             card.appendChild(sect);
-            card.appendChild(image);
+            
             card.setAttribute("class", "card");
             sect.setAttribute("class", "cardData");
             document.querySelector('div.cards').appendChild(card);

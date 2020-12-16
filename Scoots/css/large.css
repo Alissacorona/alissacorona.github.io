@@ -27,5 +27,10 @@ footer{
         max-width: 80%;
         margin: auto;
       }
+      div.cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: .5em;
+    }
  
 }
