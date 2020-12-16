@@ -1,17 +1,13 @@
 {
-    "towns": [
+    "rentals": [
       {
-        "name": "Springfield",
-        "photo": "springfield.jpg",
-        "motto": "Where everyone is lifted.",
-        "yearFounded": 1826,
-        "currentPopulation": 17852,
-        "averageRainfall": 17,
-        "events": [
-          "January 8: Spring into Winter",
-          "April 10-20: Celebration of Life",
-          "July 31-Aug 15: Dog Days of Summer Festival"
-        ]
+        "Type": "Honda Metro Scooter",
+        "Max.Persons": "1",
+        "ReservationHalfDayThreeHours": "$20",
+        "ReservationFullDay": "$30",
+        "WalkInHalfDayThreeHours": "$25",
+        "WalkInFullDay": "$35"
+ 
       },
       {
         "name": "Fish Haven",
