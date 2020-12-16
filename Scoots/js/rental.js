@@ -1,14 +1,16 @@
 const requestURL = 'https://alissacorona.github.io/Scoots/data/rental.json';
 
 fetch(requestURL)
-    .then(function (response) {
-        return response.json();
-    })
-    .then(function (jsonObject) {
-        console.table(jsonObject); 
-        let rentals = jsonObject['rentals'];
-        rentals = rental.filter(rental => (rental.type == "Honda Metro Scooter" || rental.type == "Honda Dio Scooter" || rental.type == "Honda PCX150 Scooter" || rental.type == "Honda Pioneer ATV" || rental.type == "Jeep Wrangler - 4 door with a/c" || rental.type == "Jeep Wrangler - 2 door"))
-        rentals.forEach(rental => {
+  .then(function (response) {
+    return response.json();
+  })
+  .then(function (jsonObject) {
+    console.table(jsonObject); {
+      const prophets = jsonObject['rentals'];
+        for (let i = 0; i < rentals.length; i++) {
+
+          let card = document.createElement('section');
+        let h2 = document.createElement('h2');
             
             let card = document.createElement('section');
             let sect = document.createElement('section')
@@ -20,10 +22,10 @@ fetch(requestURL)
         
 
             h1.textContent = rental.name;
-            ReservationHalfDayThreeHours.textContent = `Reservation: Half Day (3hrs) ${rental.ReservationHalfDayThreeHours}`;
-            ReservationFullDay.textContent = `Reservation: Full Day ${rental.ReservationFullDay}`;
-            WalkInHalfDayThreeHours.textContent = `Walk-In: Half Day (3hrs) ${rental.WalkInHalfDayThreeHours}`;
-            WalkInFullDay.textContent = `Walk-In: Full Day ${rental.WalkInFullDay}`;
+            ReservationHalfDayThreeHours.textContent = "Reservation: Half Day (3hrs)"  + rentals[i].ReservationHalfDayThreeHours;
+            ReservationFullDay.textContent = "Reservation: Full Day" + rentals[i].ReservationFullDay;
+            WalkInHalfDayThreeHours.textContent = "Walk-In: Half Day (3hrs)" + rentals[i].WalkInHalfDayThreeHours;
+            WalkInFullDay.textContent = "Walk-In: Full Day" + rentals[i]. WalkInFullDay.textContent;
            
             sect.appendChild(h1);
             sect.appendChild(ReservationHalfDayThreeHours);
@@ -31,8 +33,7 @@ fetch(requestURL)
             sect.appendChild(WalkInHalfDayThreeHours);
             sect.appendChild(WalkInFullDay);
             
-            card.appendChild(sect);
-            
+     
             card.setAttribute("class", "card");
             sect.setAttribute("class", "cardData");
             document.querySelector('div.cards').appendChild(card);
