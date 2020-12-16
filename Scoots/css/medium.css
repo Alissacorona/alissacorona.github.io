@@ -347,6 +347,7 @@ display: grid;
  grid-template-columns: 1fr 1fr 1fr 1fr;
 
  grid-gap: 1em;
+ position: relative;
 }
 .review{
   grid-column: 1 / 3;
@@ -453,6 +454,19 @@ max-width: 400px;
     margin: auto;
     max-width: 100%;
 }
+.scuba{
+  grid-column: 1 / 4;
+  grid-row: 1 / 1;
+}
+.snorkeling{
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+}
+.shopping{
+  grid-column: 1 / 2;
+  grid-row: 5 / 5;
+}
+
 @media only screen and (min-width: 40.5em) {
   .card {
       display: grid;
@@ -469,5 +483,10 @@ max-width: 400px;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: .5em;
+      .grid {
+        display: grid;
+        grid-gap: .5rem;
+        grid-template-columns: 150px 200px 200px 1fr 1fr 1fr 1fr;
+    }
   }
 }

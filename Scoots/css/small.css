@@ -44,5 +44,23 @@
     }
     .rental_info table{
         position: relative;
+        font-size: 20px;
     }
+    .location{
+       
+      position: relative;
+      }
+      
+      .location-1{
+       position: relative;
+      }
+       .location-2{
+   position: relative;
+      }  
+      .img-location1{
+  position: relative;
+      }
+      .img-location2{
+      position: relative;
+      }
   }
