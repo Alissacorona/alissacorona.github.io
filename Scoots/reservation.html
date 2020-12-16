@@ -47,34 +47,55 @@ y=Pacifico&display=swap" rel="stylesheet">
     
         <main>
                 <h1>Make a Reservation Today</h1>
-                <p>It is easy breazy to make a reservation</p>
-                <form method="post" action="#" class="grid">
-<fieldset>
+               <b> <p>It is easy breazy to make a reservation</p></b>
+                
+            </div>
+            <div class="home-grid">
+                <img  alt="lady with a scooter"
+                id="res_img" src="images/lady-scooter.jpg" >
+                <div class="review">
+                <p>I had the best vaction ever! It is super easy renting from Scoots. They even delivered my scooter to my hotel!
+                    <br>I was able to explore the island in style and enjoy the beauty of the island. I would 10/10 rent from Scoots again!
+                    <br> If you come to Cozumel Mexico for vaction, rent from Scoots!
+                    <br>-Cassy
+                </p>
+            </div>
+                <form method="post" action="#" class="grid content" onsubmit="return confirm('Are you sure you want to submit?');>
+                        <fieldset>
+                            <label for="browsers">Types of Rentals
+                                <input name="rentals" list="browserlist"></label>
+                            <datalist id="browserlist">
+                                <option value="Honda Metro Scooter">
+                                <option value="Honda Dio Scooter">
+                                <option value="Honda PCX150 Scooter">
+                                 <option value="Honda Pioneer ATV">
+                                    <option value="Jeep Wrangler - 4 door with a/c">
+                                        <option value="Jeep Wrangler - 2 door">
+                            </datalist>
+
+                        </fieldset>
+
+                    <fieldset>
     
         Enter Full Name: 
     <input type="text" required>
-</fieldset>
+
     
-<fieldset>
+
         Email Address:
         <input type="email" placeholder="johnadams@email.com" required>
-    </fieldset>
+  
     
-    <fieldset>
+
         Phone Number:
         <input type="tel" name="phone" placeholder="###-###-####">
     
-    </fieldset>
-    
-    <fieldset>
         Zip Code: 
         <input type="number" required>
-    </fieldset>
-    <fieldset>
+  
         Home State
         <input type="number" required>
-    </fieldset>
-    <fieldset>
+   
         <label id="country">
             Country you are from
             
@@ -82,7 +103,7 @@ y=Pacifico&display=swap" rel="stylesheet">
    
     
 
-                </form>
+               
                 <select id="country" name="country" class="form-control">
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Åland Islands">Åland Islands</option>
@@ -330,6 +351,9 @@ y=Pacifico&display=swap" rel="stylesheet">
                     <option value="Zimbabwe">Zimbabwe</option>
                 </select>
             </fieldset>
+                </form>
+             
+                <form class="grid content2">
             <fieldset>
                 <label>
                     Reservation Date
@@ -358,7 +382,11 @@ y=Pacifico&display=swap" rel="stylesheet">
             </fieldset>
             <fieldset>
                 <textarea placeholder="special accommodations/comments " tabindex="5" required></textarea>
+                <label>
+                    <input id="submitbutton" type="Submit" value="Submit Reservation">
+                    </label>
               </fieldset>
+            </form>
         </main>
         <footer>  
         <div id="googlemaps">
@@ -403,7 +431,8 @@ y=Pacifico&display=swap" rel="stylesheet">
                 </p>
                
             </div>
-    
+        </div>
+    </div>
         </footer>
         <script src="js/navscoots.js"></script>
         <script src="js/button.js"></script>
