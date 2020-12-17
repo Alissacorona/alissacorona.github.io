@@ -47,9 +47,8 @@ y=Pacifico&display=swap" rel="stylesheet">
     
         <main>
                 <h1>Make a Reservation Today</h1>
-               <b> <p>It is easy breazy to make a reservation</p></b>
-                
-            </div>
+               <p><b> It is easy breazy to make a reservation</b></p>
+        
             <div class="home-grid">
                 <img  alt="lady with a scooter"
                 id="res_img" src="images/lady-scooter.jpg" >
@@ -60,10 +59,11 @@ y=Pacifico&display=swap" rel="stylesheet">
                     <br>-Cassy
                 </p>
             </div>
-                <form method="post" action="#" class="grid content" onsubmit="return confirm('Are you sure you want to submit?');>
+            </div>
+                <form method="post" class="grid content" >
                         <fieldset>
-                            <label for="browsers">Types of Rentals
-                                <input name="rentals" list="browserlist"></label>
+                            <label >Types of Rentals</label>
+                                <input name="rentals" list="browserlist">
                             <datalist id="browserlist">
                                 <option value="Honda Metro Scooter">
                                 <option value="Honda Dio Scooter">
@@ -105,7 +105,7 @@ y=Pacifico&display=swap" rel="stylesheet">
     
 
                
-                <select id="country" name="country" class="form-control">
+                <select id="country" name="countries" class="form-control">
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Åland Islands">Åland Islands</option>
                     <option value="Albania">Albania</option>
@@ -362,7 +362,7 @@ y=Pacifico&display=swap" rel="stylesheet">
                 </label>
             </fieldset>
             <fieldset>
-                <label class="flexly" for="rating">Days Renting &nbsp;&nbsp;&nbsp;
+                <label class="flexly" id="rating">Days Renting &nbsp;&nbsp;&nbsp;
                     <input type="range" id="Renting" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                     <span id="ratingvalue">5</span>
                 </label>
@@ -430,8 +430,8 @@ y=Pacifico&display=swap" rel="stylesheet">
                 </p>
                
             </div>
-        </div>
-    </div>
+     
+    
         </footer>
         <script src="js/navscoots.js"></script>
         <script src="js/button.js"></script>

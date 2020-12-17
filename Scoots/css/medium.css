@@ -538,10 +538,6 @@ max-width: 100%;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: .5em;
-      .grid {
-        display: grid;
-        grid-gap: .5rem;
-        grid-template-columns: 150px 200px 200px 1fr 1fr 1fr 1fr;
-    }
+     
   }
 }
