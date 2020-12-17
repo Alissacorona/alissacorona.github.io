@@ -32,5 +32,9 @@ footer{
         grid-template-columns: repeat(3, 1fr);
         gap: .5em;
     }
+    img{
+        position: relative;
+    }
+    
  
 }
