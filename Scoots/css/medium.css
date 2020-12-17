@@ -180,7 +180,7 @@ margin: auto;
         }
       .rental-info,
        th{
-        position: block;
+      
         border: 4px solid black;
         padding: 1em;
         
@@ -306,10 +306,8 @@ form{
   
 }
 .content {
-  
     grid-column: 1 / 3;
     grid-row-start: 2 / 5;
-   
     min-height: 300px;
   
 }
